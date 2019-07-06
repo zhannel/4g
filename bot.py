@@ -1,42 +1,53 @@
-<<<<<<< HEAD
 import requests
 import misc #тут токен
-# import json #to output russian text properly
-# https://api.telegram.org/bot848577923:AAHlsUHjNBWB6QprMt9HSQ79ZA9HJLvgssU/sendmessage?chat_id=389181251&text=pidor
+from tasks import get_btc
+from time import sleep
 
 token = misc.token
 URL = 'https://api.telegram.org/bot' + token + '/'
+
+
+global last_update_id
+last_update_id = 0
 
 def get_updates():
     url = URL + 'getupdates'
     r = requests.get(url)
     return r.json()
 
-
-
-
 def get_message():
     data = get_updates()
-    chat_id = data['result'][-1]['message']['chat']['id']
-    message_text = data['result'][-1]['message']['text']
 
-    message = {'chat_id': chat_id,
+    last_object = data['result'][-1]
+    current_update_id = last_object['update_id']
+
+    global last_update_id
+    if (last_update_id != current_update_id):
+        last_update_id = current_update_id
+        chat_id = last_object['message']['chat']['id']
+        message_text = last_object['message']['text']
+        message = {'chat_id': chat_id,
                'text': message_text}
-    return message
+        return message
+    return None
 
 
 def send_message(chat_id, text='go kill tourself'):
     url = URL + 'sendmessage?chat_id={}&text={}'.format(chat_id, text)
     requests.get(url)
+
     
 def main():
-    answer = get_message()
-    chat_id = answer['chat_id']
-    text = answer['text']
-
-    if 'sam pidor' in text:
-        send_message(chat_id, 'pidora otvet')
-   
+    while True:
+        answer = get_message()
+        if (answer != None):
+            chat_id = answer['chat_id']
+            text = answer['text']
+            if text == '/btc':
+                send_message(chat_id, get_btc())
+        else:
+            continue
+        sleep(300)
 
 if __name__ == '__main__':
     main()
@@ -44,51 +55,3 @@ if __name__ == '__main__':
 
     
 
-=======
-import requests
-import misc #тут токен
-import json #to output russian text properly
-# https://api.telegram.org/bot848577923:AAHlsUHjNBWB6QprMt9HSQ79ZA9HJLvgssU/sendmessage?chat_id=389181251&text=pidor
-
-token = misc.token
-URL = 'https://api.telegram.org/bot' + token + '/'
-
-def get_updates():
-    url = URL + 'getupdates'
-    r = requests.get(url)
-    return r.json()
-
-
-
-
-def get_message():
-    data = get_updates()
-    chat_id = data['result'][-1]['message']['chat']['id']
-    message_text = data['result'][-1]['message']['text']
-
-    message = {'chat_id': chat_id,
-               'text': message_text}
-    return message
-
-    
-def main():
-    print(get_message())
-   # d = get_updates()
-
-   # with open('updates.json', 'w') as file:
-        # json.dump(d, file, indent=2, ensure_ascii=False) #write to file
-        # indent eto otstupy
-
-
-
-    
-
-
-
-if __name__ == '__main__':
-    main()
-
-
-    
-
->>>>>>> 0c640e4b8dd3aa354071250fb55297c6648e13cb
