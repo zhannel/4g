@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title> Authorization</title>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width = device - width, initial-scale = 1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+	<script src="/css/script.js"></script>
+
+	
+</head>
+<body class = "col-md-12">
+	<div class="container-fluid bg">
+		<div class="layer"></div>
+		<div class="row" style = "margin-left: 50px">
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<form id = "form-container">
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+					  </div>
+					  <div class="form-group">
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					  </div>
+					  <div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Remember my account
+					    </label>
+					  </div>
+					  <button type="login" class="btn btn-success btn-block">Sign In</button>
+					  <button onClick = "openForm()" type="login" class="btn btn-success btn-block" >Sign Up</button>
+				</form>
+			</div>
+
+
+
+			<div class="col-md-4 col-sm-4 col-xs-12" id = "sign-ip-id">
+				<form id = "sign-up">
+					<div class="form-group">
+					    <input type="first-name" class="form-control" id="exampleInputEmail1" placeholder="First name">
+					</div>
+
+					<div class="form-group">
+					    <input type="last-name" class="form-control" id="exampleInputEmail1" placeholder="Last name">
+					</div>
+
+					<div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+					</div>
+					
+					<div class="form-group">
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+
+
+					<div class="form-group">
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm password">
+					 </div>
+
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Remember my account
+					    </label>
+					</div>
+					<button type="login" class="btn btn-success btn-block">Register</button>
+				</form>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		</div>
+	</div>
+</body>
+</html>
