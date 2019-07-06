@@ -1,0 +1,152 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "update_id": 948691103,
+      "message": {
+        "message_id": 19,
+        "from": {
+          "id": 389181251,
+          "is_bot": false,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 389181251,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "type": "private"
+        },
+        "date": 1562429752,
+        "text": "/start",
+        "entities": [
+          {
+            "offset": 0,
+            "length": 6,
+            "type": "bot_command"
+          }
+        ]
+      }
+    },
+    {
+      "update_id": 948691104,
+      "message": {
+        "message_id": 20,
+        "from": {
+          "id": 389181251,
+          "is_bot": false,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 389181251,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "type": "private"
+        },
+        "date": 1562430477,
+        "text": "/start",
+        "entities": [
+          {
+            "offset": 0,
+            "length": 6,
+            "type": "bot_command"
+          }
+        ]
+      }
+    },
+    {
+      "update_id": 948691105,
+      "message": {
+        "message_id": 21,
+        "from": {
+          "id": 389181251,
+          "is_bot": false,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 389181251,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "type": "private"
+        },
+        "date": 1562430516,
+        "text": "gffdgdg"
+      }
+    },
+    {
+      "update_id": 948691106,
+      "message": {
+        "message_id": 22,
+        "from": {
+          "id": 389181251,
+          "is_bot": false,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 389181251,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "type": "private"
+        },
+        "date": 1562430524,
+        "text": "gdgdf"
+      }
+    },
+    {
+      "update_id": 948691107,
+      "message": {
+        "message_id": 23,
+        "from": {
+          "id": 389181251,
+          "is_bot": false,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 389181251,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "type": "private"
+        },
+        "date": 1562430574,
+        "text": "/start",
+        "entities": [
+          {
+            "offset": 0,
+            "length": 6,
+            "type": "bot_command"
+          }
+        ]
+      }
+    },
+    {
+      "update_id": 948691108,
+      "message": {
+        "message_id": 24,
+        "from": {
+          "id": 389181251,
+          "is_bot": false,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 389181251,
+          "first_name": "алтынпончик",
+          "username": "myrzaboi",
+          "type": "private"
+        },
+        "date": 1562430983,
+        "text": "sadasd"
+      }
+    }
+  ]
+}
