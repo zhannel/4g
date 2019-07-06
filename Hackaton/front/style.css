@@ -1,1 +1,54 @@
+body{
+	size: 100% 100%;
+	background: url('../img/bg.jpg') no-repeat;
+	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+#form-container{
+	border: 2px solid white;
+	padding: 60px 60px;
+	margin-top: 25vh;
+	
+}
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;w
+    height: 100%;
+}
+label{
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	color: white
+}
+.registration{
+	text-align: center;
+	margin-top: 5%;
+}
+.registration a {
+	font-style: bold;
+	color: black;
+}
+#sign-up{
+	border: 2px solid white;
+	padding: 60px 60px;
+	margin-top: 25vh;
+}
+.btn{
+	text-align: center;
+	font-size: 16px;
+	background-color: #bdb8db
+}
+
+.btn :hover{   {
+	text-align: center;
+	font-size: 16px;
+	background-color: #a9a3cf
+}
+
 
